@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Обложка для социальных сетей">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6F1E8"/>
+      <stop offset="1" stop-color="#EDE4D7"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2F7B6F"/>
+      <stop offset="1" stop-color="#D77461"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#b)"/>
+  <circle cx="980" cy="140" r="220" fill="#E7EFEA"/>
+  <circle cx="240" cy="520" r="260" fill="#F0E7E3"/>
+  <path d="M110 160c90-140 300-170 410-60 112 112 78 320-64 396-144 76-320-6-366-156-26-82 0-144 20-180Z" fill="url(#g)" opacity="0.18"/>
+
+  <g font-family="Cormorant Garamond, serif" fill="#1F2A2E">
+    <text x="92" y="250" font-size="70" font-weight="600">Уроки гитары</text>
+    <text x="92" y="318" font-size="48" font-weight="500" opacity="0.92">для детей и взрослых</text>
+  </g>
+  <g font-family="Golos Text, system-ui, -apple-system, Segoe UI, Arial, sans-serif" fill="#1F2A2E" opacity="0.82">
+    <text x="92" y="392" font-size="30">Мягко • Понятно • С первой песни</text>
+  </g>
+  <path d="M92 430h420" stroke="#2F7B6F" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+</svg>
+

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Спасибо! | Заявка отправлена</title>
+    <meta name="description" content="Спасибо! Заявка на урок гитары отправлена. Мы скоро свяжемся с вами." />
+    <meta name="robots" content="noindex,follow" />
+
+    <link rel="canonical" href="https://example.com/thanks.html" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__row">
+        <a class="brand" href="/">
+          <span class="brand__name">Гитара</span>
+          <span class="brand__tag">уроки с заботой</span>
+        </a>
+        <nav class="nav" aria-label="Навигация">
+          <div class="nav__cta">
+            <a class="btn btn--ghost btn--small" href="/">На главную</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <h1 class="page__title">Спасибо!</h1>
+        <p class="page__lead">Заявка отправлена. Я отвечу и предложу 2–3 удобных времени для урока.</p>
+
+        <section class="section">
+          <div class="card reveal" style="padding:22px">
+            <div class="kicker">следующий шаг</div>
+            <h2 class="h2" style="margin:10px 0 10px">Хотите быстрее?</h2>
+            <p class="subhead" style="margin:0 0 14px">Можно сразу написать в Telegram или WhatsApp, чтобы не ждать ответа по форме.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn btn--primary" href="https://t.me/username" target="_blank" rel="noopener" data-cta="thanks_telegram">Написать в Telegram</a>
+              <a class="btn btn--ghost" href="/uroki-gitary.html">Программа</a>
+            </div>
+            <p class="notice" style="margin-top:12px">Если вы настраиваете Google Ads: эта страница подходит для фиксации конверсии.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="/js/analytics.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <script>
+      // Conversion on the "Thank you" page (Google Ads).
+      window.addEventListener('DOMContentLoaded', () => {
+        // Respect consent: only enable analytics if user already accepted earlier.
+        let consent = null;
+        try { consent = JSON.parse(localStorage.getItem('guitar_consent_v1') || 'null'); } catch {}
+        if (consent && consent.analytics === true) {
+          if (typeof window.initAnalytics === 'function') window.initAnalytics();
+          if (typeof window.trackConversion === 'function') window.trackConversion('thanks_page');
+        }
+      });
+    </script>
+  </body>
+</html>
