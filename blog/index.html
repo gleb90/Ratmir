@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Блог | Уроки гитары</title>
+    <meta name="description" content="Блог преподавателя гитары: советы для начинающих, выбор инструмента, аккорды и ритм." />
+
+    <link rel="canonical" href="https://ваш-домен.ru/blog/" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Блог: уроки гитары" />
+    <meta property="og:description" content="Советы для начинающих и полезные разборы." />
+    <meta property="og:image" content="https://ваш-домен.ru/assets/og-cover.svg" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Блог: уроки гитары",
+        "url": "https://ваш-домен.ru/blog/",
+        "inLanguage": "ru"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержанию</a>
+
+    <header class="header">
+      <div class="container header__row">
+        <a class="brand" href="/">
+          <span class="brand__name">Гитара</span>
+          <span class="brand__tag">уроки с заботой</span>
+        </a>
+
+        <nav class="nav" data-nav aria-label="Основная навигация">
+          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="nav__links">
+            <a href="/uroki-gitary.html">Уроки</a>
+            <a href="/ceny.html">Цены</a>
+            <a href="/o-prepodavatele.html">О преподавателе</a>
+            <a href="/blog/" aria-current="page">Блог</a>
+            <a href="/kontakty.html">Контакты</a>
+          </div>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary btn--small" href="/kontakty.html" data-cta="cta_book_lesson">Записаться</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="page">
+      <div class="container">
+        <h1 class="page__title">Блог</h1>
+        <p class="page__lead">Небольшие статьи для учеников: чтобы проще стартовать и быстрее прогрессировать.</p>
+        <div class="field" style="margin-top:14px; max-width:520px">
+          <label for="q">Поиск по статьям</label>
+          <input id="q" type="search" placeholder="например: аккорды, гитара, первый урок" data-blog-search />
+        </div>
+        <p class="notice" data-blog-empty style="display:none; margin-top:10px">Ничего не найдено. Попробуйте другое слово.</p>
+      </div>
+
+      <section class="section">
+        <div class="container grid grid--3">
+          <article class="card reveal" data-blog-item>
+            <div class="kicker">старт</div>
+            <h2 class="card__title"><a href="/blog/pervyi-urok.html">Первый урок: что будет и как подготовиться</a></h2>
+            <p>Короткий чек‑лист: что взять, как настроиться и что мы успеем на первом занятии.</p>
+          </article>
+          <article class="card reveal" data-blog-item>
+            <div class="kicker">инструмент</div>
+            <h2 class="card__title"><a href="/blog/kak-vybrat-gitaru.html">Как выбрать гитару новичку и не переплатить</a></h2>
+            <p>Разница между классикой и акустикой, высота струн, размеры для детей.</p>
+          </article>
+          <article class="card reveal" data-blog-item>
+            <div class="kicker">аккорды</div>
+            <h2 class="card__title"><a href="/blog/akkordy-dlya-nachinayushchih.html">5 аккордов, с которыми можно сыграть десятки песен</a></h2>
+            <p>Набор для старта: что выучить первым и как тренировать смены без “залипания”.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand" href="/">
+            <span class="brand__name">Гитара</span>
+            <span class="brand__tag">уроки с заботой</span>
+          </a>
+          <p class="footer__fine">© <span data-year></span> Преподаватель гитары. Ваш город + онлайн.</p>
+        </div>
+        <div class="footer__links">
+          <a href="/privacy.html">Политика конфиденциальности</a>
+          <a href="/kontakty.html">Контакты</a>
+          <a href="#" data-consent-reset>Настройки cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Согласие на cookies">
+      <div class="consent__card">
+        <div class="consent__text">
+          Мы используем аналитические cookies, чтобы улучшать сайт и измерять эффективность рекламы. Вы можете отказаться.
+          Подробнее в <a href="/privacy.html">политике конфиденциальности</a>.
+        </div>
+        <div class="consent__actions">
+          <button class="btn btn--ghost btn--small" type="button" data-consent-decline>Отказаться</button>
+          <button class="btn btn--primary btn--small" type="button" data-consent-accept>Принять</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/analytics.js" defer></script>
+    <script src="/js/consent.js" defer></script>
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>

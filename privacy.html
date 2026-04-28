@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Политика конфиденциальности</title>
+    <meta name="description" content="Политика конфиденциальности: какие данные собираются на сайте и как используются." />
+    <meta name="robots" content="index,follow" />
+
+    <link rel="canonical" href="https://ваш-домен.ru/privacy.html" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержанию</a>
+
+    <header class="header">
+      <div class="container header__row">
+        <a class="brand" href="/">
+          <span class="brand__name">Гитара</span>
+          <span class="brand__tag">уроки с заботой</span>
+        </a>
+        <nav class="nav" aria-label="Навигация">
+          <div class="nav__cta">
+            <a class="btn btn--ghost btn--small" href="/">На главную</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="page">
+      <div class="container">
+        <h1 class="page__title">Политика конфиденциальности</h1>
+        <p class="page__lead">
+          Это шаблон. Подставьте реальные реквизиты (ФИО/ИП/компания, email), и при необходимости
+          согласуйте текст с юристом под вашу страну.
+        </p>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="panel reveal">
+            <div class="kicker">1. данные</div>
+            <h2 style="font-family:var(--serif); margin:0 0 10px; font-size:28px">Какие данные мы собираем</h2>
+            <ul class="list">
+              <li>Данные, которые вы отправляете через форму: имя, контакт, возраст ученика, цель обучения.</li>
+              <li>Технические данные: тип устройства, страницы, которые вы посещаете (при согласии на аналитику).</li>
+            </ul>
+          </div>
+
+          <div class="panel reveal" style="margin-top:14px">
+            <div class="kicker">2. цели</div>
+            <h2 style="font-family:var(--serif); margin:0 0 10px; font-size:28px">Зачем мы используем данные</h2>
+            <ul class="list">
+              <li>Чтобы связаться с вами и подобрать время урока.</li>
+              <li>Чтобы улучшать сайт (аналитика) и измерять эффективность рекламы (Google Ads) при вашем согласии.</li>
+            </ul>
+          </div>
+
+          <div class="panel reveal" style="margin-top:14px">
+            <div class="kicker">3. cookies</div>
+            <h2 style="font-family:var(--serif); margin:0 0 10px; font-size:28px">Cookies и аналитика</h2>
+            <p style="margin:0; color:var(--muted)">
+              Мы показываем баннер согласия. Если вы откажетесь, аналитические cookies не будут использоваться.
+              Вы можете изменить выбор.
+            </p>
+            <div style="margin-top:12px">
+              <a class="btn btn--primary" href="#" data-consent-reset>Изменить выбор cookies</a>
+            </div>
+          </div>
+
+          <div class="panel reveal" style="margin-top:14px">
+            <div class="kicker">4. контакт</div>
+            <h2 style="font-family:var(--serif); margin:0 0 10px; font-size:28px">Контакты</h2>
+            <p style="margin:0; color:var(--muted)">
+              По вопросам обработки данных: <a href="mailto:teacher@ваш-домен.ru">teacher@ваш-домен.ru</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand" href="/">
+            <span class="brand__name">Гитара</span>
+            <span class="brand__tag">уроки с заботой</span>
+          </a>
+          <p class="footer__fine">© <span data-year></span> Преподаватель гитары.</p>
+        </div>
+        <div class="footer__links">
+          <a href="/kontakty.html">Контакты</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Согласие на cookies">
+      <div class="consent__card">
+        <div class="consent__text">
+          Мы используем аналитические cookies, чтобы улучшать сайт и измерять эффективность рекламы. Вы можете отказаться.
+          Подробнее в <a href="/privacy.html">политике конфиденциальности</a>.
+        </div>
+        <div class="consent__actions">
+          <button class="btn btn--ghost btn--small" type="button" data-consent-decline>Отказаться</button>
+          <button class="btn btn--primary btn--small" type="button" data-consent-accept>Принять</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/analytics.js" defer></script>
+    <script src="/js/consent.js" defer></script>
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>
+

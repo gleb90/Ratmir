@@ -1,0 +1,11 @@
+{
+  "name": "Уроки гитары",
+  "short_name": "Гитара",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F1E8",
+  "theme_color": "#1F2A2E",
+  "description": "Уроки гитары для детей и взрослых: мягко, понятно, с первой песни.",
+  "lang": "ru"
+}
+

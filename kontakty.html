@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>Контакты | Записаться на урок гитары</title>
+    <meta name="description" content="Контакты преподавателя гитары. Запись на уроки для детей и взрослых: онлайн или вживую. Напишите в мессенджер или оставьте заявку." />
+
+    <link rel="canonical" href="https://ваш-домен.ru/kontakty.html" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Контакты" />
+    <meta property="og:description" content="Запись на уроки гитары: онлайн или вживую." />
+    <meta property="og:image" content="https://ваш-домен.ru/assets/og-cover.svg" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://ваш-домен.ru/" },
+          { "@type": "ListItem", "position": 2, "name": "Контакты", "item": "https://ваш-домен.ru/kontakty.html" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Перейти к содержанию</a>
+
+    <header class="header">
+      <div class="container header__row">
+        <a class="brand" href="/">
+          <span class="brand__name">Гитара</span>
+          <span class="brand__tag">уроки с заботой</span>
+        </a>
+
+        <nav class="nav" data-nav aria-label="Основная навигация">
+          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="nav__links">
+            <a href="/uroki-gitary.html">Уроки</a>
+            <a href="/ceny.html">Цены</a>
+            <a href="/o-prepodavatele.html">О преподавателе</a>
+            <a href="/blog/">Блог</a>
+            <a href="/kontakty.html" aria-current="page">Контакты</a>
+          </div>
+
+          <div class="nav__cta">
+            <a class="btn btn--primary btn--small" href="/kontakty.html" data-cta="cta_book_lesson">Записаться</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="page">
+      <div class="container">
+        <h1 class="page__title">Контакты</h1>
+        <p class="page__lead">Ратмир на связи. Самый быстрый способ: написать в мессенджер. Если удобно, оставьте заявку ниже.</p>
+      </div>
+
+      <section class="section">
+        <div class="container split">
+          <div class="panel reveal">
+            <div class="kicker">быстро</div>
+            <h2 style="font-family:var(--serif); margin:0 0 10px; font-size:28px">Написать сейчас</h2>
+            <p style="margin:0 0 12px; color:var(--muted)">Самый быстрый способ связаться — написать в мессенджер.</p>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn btn--primary" href="tel:+77478565141" data-conversion="call">Позвонить</a>
+              <a class="btn btn--ghost" href="https://t.me/username" target="_blank" rel="noopener" data-conversion="telegram">Telegram</a>
+              <a class="btn btn--ghost" href="https://wa.me/77478565141" target="_blank" rel="noopener" data-conversion="whatsapp">WhatsApp</a>
+            </div>
+            <p class="notice" style="margin-top:12px">Телефон: <a href="tel:+77478565141">+7 747 856 51 41</a></p>
+            <p class="notice" style="margin-top:12px">График: будни 12:00–20:00, выходные по договорённости (поменяйте под себя).</p>
+          </div>
+
+          <div class="panel reveal">
+            <div class="kicker">заявка</div>
+            <h2 style="font-family:var(--serif); margin:0 0 10px; font-size:28px">Оставить заявку</h2>
+            <form class="form" data-form="contact" data-endpoint="">
+              <div class="field">
+                <label for="name">Имя</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="age">Возраст ученика</label>
+                <input id="age" name="age" inputmode="numeric" placeholder="например, 10 или 24" />
+              </div>
+              <div class="field">
+                <label for="format">Формат</label>
+                <select id="format" name="format">
+                  <option value="online">Онлайн</option>
+                  <option value="offline">Вживую</option>
+                  <option value="any">Любой</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="contact">Контакт (телефон / Telegram)</label>
+                <input id="contact" name="contact" autocomplete="tel" required />
+              </div>
+              <div class="field">
+                <label for="message">Цель (пара слов)</label>
+                <textarea id="message" name="message" placeholder="например: хочу играть песни аккордами / ребёнку нравится рок"></textarea>
+              </div>
+              <button class="btn btn--primary" type="submit" data-conversion="lead">Отправить</button>
+              <p class="notice" data-form-status></p>
+              <p class="notice">
+                Нажимая “Отправить”, вы соглашаетесь с обработкой данных согласно
+                <a href="/privacy.html">политике конфиденциальности</a>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="faq reveal">
+            <details>
+              <summary>Сколько времени занимает ответ?</summary>
+              <p>Обычно в течение дня. Если это выходной, могу ответить чуть позже.</p>
+            </details>
+            <details>
+              <summary>Можно ли подобрать гитару перед началом занятий?</summary>
+              <p>Да. Напишите бюджет и возраст ученика, я подскажу несколько подходящих вариантов.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand" href="/">
+            <span class="brand__name">Гитара</span>
+            <span class="brand__tag">уроки с заботой</span>
+          </a>
+          <p class="footer__fine">© <span data-year></span> Преподаватель гитары. Ваш город + онлайн.</p>
+        </div>
+        <div class="footer__links">
+          <a href="/privacy.html">Политика конфиденциальности</a>
+          <a href="/kontakty.html" data-cta="footer_contacts">Контакты</a>
+          <a href="#" data-consent-reset>Настройки cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Согласие на cookies">
+      <div class="consent__card">
+        <div class="consent__text">
+          Мы используем аналитические cookies, чтобы улучшать сайт и измерять эффективность рекламы. Вы можете отказаться.
+          Подробнее в <a href="/privacy.html">политике конфиденциальности</a>.
+        </div>
+        <div class="consent__actions">
+          <button class="btn btn--ghost btn--small" type="button" data-consent-decline>Отказаться</button>
+          <button class="btn btn--primary btn--small" type="button" data-consent-accept>Принять</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/analytics.js" defer></script>
+    <script src="/js/consent.js" defer></script>
+    <script src="/js/forms.js" defer></script>
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>
